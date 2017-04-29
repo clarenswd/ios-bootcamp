@@ -12,9 +12,12 @@
 		B3749DE01EB407E10084B985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3749DDE1EB407E10084B985 /* Main.storyboard */; };
 		B3749DE21EB407E10084B985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3749DE11EB407E10084B985 /* Assets.xcassets */; };
 		B3749DE51EB407E10084B985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3749DE31EB407E10084B985 /* LaunchScreen.storyboard */; };
+		DA8464301F506F25715294E3 /* Pods_FancyClock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970B456F20D9F81A803713CD /* Pods_FancyClock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A5F90DC462684583FF66749 /* Pods-FancyClock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyClock.release.xcconfig"; path = "Pods/Target Support Files/Pods-FancyClock/Pods-FancyClock.release.xcconfig"; sourceTree = "<group>"; };
+		970B456F20D9F81A803713CD /* Pods_FancyClock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyClock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3749DD71EB407E10084B985 /* FancyClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3749DDA1EB407E10084B985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3749DDC1EB407E10084B985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		B3749DE11EB407E10084B985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3749DE41EB407E10084B985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3749DE61EB407E10084B985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEAC172F84B3A681E56850E9 /* Pods-FancyClock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyClock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FancyClock/Pods-FancyClock.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8464301F506F25715294E3 /* Pods_FancyClock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D4DE9A66CCE2E2BA2126F27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEAC172F84B3A681E56850E9 /* Pods-FancyClock.debug.xcconfig */,
+				1A5F90DC462684583FF66749 /* Pods-FancyClock.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B3749DCE1EB407E10084B985 = {
 			isa = PBXGroup;
 			children = (
 				B3749DD91EB407E10084B985 /* FancyClock */,
 				B3749DD81EB407E10084B985 /* Products */,
+				7D4DE9A66CCE2E2BA2126F27 /* Pods */,
+				CC62292B27EA33C850B54A14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = FancyClock;
 			sourceTree = "<group>";
 		};
+		CC62292B27EA33C850B54A14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				970B456F20D9F81A803713CD /* Pods_FancyClock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3749DE91EB407E10084B985 /* Build configuration list for PBXNativeTarget "FancyClock" */;
 			buildPhases = (
+				34946E261281560C35D5EE83 /* [CP] Check Pods Manifest.lock */,
 				B3749DD31EB407E10084B985 /* Sources */,
 				B3749DD41EB407E10084B985 /* Frameworks */,
 				B3749DD51EB407E10084B985 /* Resources */,
+				AD7A9F81800ED6C49B9EAA57 /* [CP] Embed Pods Frameworks */,
+				715D6AE6859BF025EDD6C654 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34946E261281560C35D5EE83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		715D6AE6859BF025EDD6C654 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FancyClock/Pods-FancyClock-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7A9F81800ED6C49B9EAA57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FancyClock/Pods-FancyClock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3749DD31EB407E10084B985 /* Sources */ = {
@@ -260,6 +335,7 @@
 		};
 		B3749DEA1EB407E10084B985 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEAC172F84B3A681E56850E9 /* Pods-FancyClock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -273,6 +349,7 @@
 		};
 		B3749DEB1EB407E10084B985 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A5F90DC462684583FF66749 /* Pods-FancyClock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";

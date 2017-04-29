@@ -21,6 +21,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xU1-fP-jnN">
+                                <rect key="frame" x="61" y="52" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Teq-EG-U9j">
                                 <rect key="frame" x="123.5" y="258" width="128.5" height="151.5"/>
                                 <subviews>
@@ -37,7 +41,6 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="8na-T5-nf2" firstAttribute="top" secondItem="Teq-EG-U9j" secondAttribute="top" constant="16" id="AJX-9I-e1M"/>
                                     <constraint firstAttribute="trailing" secondItem="5Yh-Na-76f" secondAttribute="trailing" constant="16" id="Hao-jQ-whq"/>
@@ -57,6 +60,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="8na-T5-nf2" id="6RG-mQ-Pgf"/>
+                        <outlet property="imageView" destination="xU1-fP-jnN" id="91I-0C-sa8"/>
                         <outlet property="timeLabel" destination="5Yh-Na-76f" id="HrX-PK-8M1"/>
                     </connections>
                 </viewController>
